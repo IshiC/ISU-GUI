@@ -1,0 +1,32 @@
+import java.awt.Color;
+import java.awt.Container;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Game {
+	
+	JFrame window;
+	Container con;
+	JPanel titleNamePanel;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			new Game();
+	}
+	
+	public Game(){
+		
+		window = new JFrame();
+		window.setSize(800,600);//Size of window
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//Able to close program
+		window.getContentPane().setBackground(Color.black);//Colour of window
+		window.setLayout(null);//Disable default layout for game
+		window.setVisible(true);//To see the window
+		con = window.getContentPane();//Base layer
+		
+		titleNamePanel = new JPanel();//Panel initialization 
+		titleNamePanel.setBounds(100, 100, 600, 150);//Size of panel
+		titleNamePanel.setBackground(Color.blue);//Colour of panel
+		con.add(titleNamePanel);//Base layer
+	}
+}
