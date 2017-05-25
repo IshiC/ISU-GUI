@@ -14,9 +14,28 @@ public class Game {
 		choice.toUpperCase();
 		if (choice.toUpperCase().equals("A"))
 		{
-			System.out.print("If you choose A, you stomp on the gas peddle as hard as you can and try to bust through the zombies. \nYou manage to get out but they end up ripping out the exhaust pipe and part of the  hood. \nDo you: /nA)Keep on driving for as long as you can/nB)Hole up in your truck for the rest of your days /nC)Leave the truck and walk on foot/nD)Try and find parts for your truck");
+			System.out.print("If you choose A, you stomp on the gas peddle as hard as you can and try to bust through the zombies. You manage to get out the other end but they end up ripping out the exhaust pipe and part of the  hood. Do you: \nA)Keep on driving for as long as you can \nB)Hold up in your truck hoping someone comes that can rescue you \nC)Leave the truck and walk on foot \nD)Try and find parts for your truck");
 			choice=input.next();
 			choice.toUpperCase();
+			if (choice.toUpperCase().equals("A"))
+			{
+				System.out.print("");
+			}
+			else if (choice.toUpperCase().equals("B"))
+			{
+				System.out.print("You decide to lock your doors and you figure out that you have enough food and water for only 2 days. 2 days pass and you stay in one spot but the only thing that is coming towards you is zombies and not help. You have ran out of food and water but at this point you are completely surrounded by zombies and you realize you no matter what you do you won't make it out. YOU DIE");
+				System.out.println("Do you want to play again (y/n)?");
+				answer=input.next();
+				answer.toLowerCase();
+			}
+			else if (choice.toUpperCase().equals("C"))
+			{
+				System.out.print("");
+			}
+			else if (choice.toUpperCase().equals("D"))
+			{
+				System.out.print("");
+			}
 		}
 		else if (choice.toUpperCase().equals("B"))
 		{
