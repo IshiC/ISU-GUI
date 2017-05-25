@@ -1,0 +1,67 @@
+import java.util.*;
+public class Game {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String choice="";
+		String answer="";
+		Scanner input=new Scanner(System.in);
+		do
+		{
+		System.out.print("You are on a truck going to your best friend, Marty B’s, house  when you look out your driver's window to see something weird. \nYou stop your truck to go out and see what it is and you notice that it is a humanoid figure in the woods. \nYou go to see if he is alright when you notice a foul smell and then see his literal dead stare looking right into your eyes, you see that has a large piece of his shoulder bitten off with a disgusting amount of exposed skin. \nYou ask him what happened but he only answers with a moan. \nYou continue to stare back at the figure, then out of nowhere he attacks. He starts running at you with that same dead stare locked onto you as his mouth is wide open. \nYou run as fast as you can back to your truck, lock the door and speed away with no hesitation. \nWhen you are in the truck you keep asking yourself what that guy was doing, then you realize that even though you never thought the day would come, you realize that the world has gone into a ZOMBIE APOCALYPSE. \nYou keep driving to Marty B’s house with just being 10 minutes and you see that the road is blocked by hundreds of humanoid figures similarly to the one that tried to eat you earlier (insert image). \nYou step on the brakes before getting any closer and…");
+		System.out.println("You have to make a choice now, do you:/nA)Try to drive through the zombies/nB)Turn your truck around and try to find a different route/nC)Get out of your car and try to make it on foot by walking around the big mob/nD)Or try to fight your way out");
+		choice=input.next();
+		choice.toUpperCase();
+		if (choice.toUpperCase().equals("A"))
+		{
+			System.out.print("If you choose A, you stomp on the gas peddle as hard as you can and try to bust through the zombies. \nYou manage to get out but they end up ripping out the exhaust pipe and part of the  hood. \nDo you: /nA)Keep on driving for as long as you can/nB)Hole up in your truck for the rest of your days /nC)Leave the truck and walk on foot/nD)Try and find parts for your truck");
+			choice=input.next();
+			choice.toUpperCase();
+		}
+		else if (choice.toUpperCase().equals("B"))
+		{
+			
+		}
+		else if (choice.toUpperCase().equals("C"))
+		{
+			
+		}
+		else if (choice.toUpperCase().equals("D"))
+		{
+			System.out.print("If you choose D, you get out of your truck and look around for a weapon to help you fight off the zombies. \nOn the ground you see three items: /nA)A small knife that is covered in blood and stuck to a nearby tree/nB)A handgun that is in a bush but you don’t know if it is loaded/nC)A old broom stick that is sharpened at one end");
+			choice=input.next();
+			choice.toUpperCase();
+			if (choice.toUpperCase().equals("A"))
+			{
+				System.out.print("You run as fast as you can to the tree to pull the knife out but you are seen by one of the nearby zombies. You try to pull the knife out but it is stuck so you pull as hard as you can ripping the knife out but as you do your arm swings back and hitting one of the zombies in the head with a knife. As you kill one zombie another zombie crawling on the ground bites you leg turning you into a zombie you killing you. YOU DIE");
+			}
+			else if (choice.toUpperCase().equals("B"))
+			{
+				System.out.print("You run to the bush to grab the gun but as you get closer you realize that the gun is in the hands of a dead zombie. You end up peeling the gun out of the dead man's hand and check to see if there are any bullets in the gun. the gun ends up only having 1 bullet. Do you: \nA)Put the gun in your mouth and end it before the zombies can\nB)Try and run through the hurd and only shoot if you need to");
+				if (choice.toUpperCase().equals("A"))
+				{
+					System.out.println("YOU DIE");
+					System.out.println("Do you want to play again (y/n)?");
+					answer=input.next();
+					answer.toLowerCase();
+				}
+				else if (choice.toUpperCase().equals("B"))
+				{
+					System.out.println("You run as fast as you can at the hurd dodging zombies left and right. You are in the middle of the hurd and look for a way out but you are surrounded by zombies you shoot one but as you do another one bites you YOU DIE");
+					System.out.println("Do you want to play again (y/n)?");
+					answer=input.next();
+					answer.toLowerCase();
+				}
+			}
+			else if (choice.toUpperCase().equals("C"))
+			{
+				System.out.println("You grab the broomstick and start moving towards the herd of zombies. You kill the first one that comes at you and then the second. Then you start running through the zombies killing as many as you can as you go through but the stick ends up breaking as you are going and you are surrounded by zombies. You look around for help but you don't see anyone or anything and you realize that it is over. YOU DIE.");
+				System.out.println("Do you want to play again (y/n)?");
+				answer=input.next();
+				answer.toLowerCase();
+			}
+		}
+	}while(answer.toLowerCase().equals("y"));
+		}
+ 
+}
